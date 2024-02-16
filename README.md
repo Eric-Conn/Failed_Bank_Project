@@ -1,13 +1,12 @@
 # Failed Bank Data Analysis
 
-For this project we will be analyzing the failed bank list. The source of this list is the FDIC website. The list includes bank failures since October 1, 2000.
+For this project we will be analyzing the FDIC failed bank list. The source of this list is the FDIC website. The list includes bank failures since October 1, 2000.
 
 ### Background
 
 In the context of this project, a failed bank, according to the FDIC, is an FDIC insured bank that is unable to meet its obligations to depositors and others.
 
-The source of this data is the FDIC failed bank list, which can be found on the FDIC website. 
-
+### Analysis
 
 ```python
 import numpy as np
@@ -254,7 +253,7 @@ state_counts[(state_counts <= 13) & (state_counts.index != 'TX')].shape[0]
 
 
 
-We have $34/44 = 77\%$ of states have less than 13 banks fail since October 1, 2000.
+We have $34/44 = 77$ percent of states have less than 13 banks fail since October 1, 2000.
 
 ### Conclusion
 
